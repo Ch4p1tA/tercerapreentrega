@@ -1,0 +1,49 @@
+@use "variables";
+@use "mixins";
+
+.modal-galeria-fondo{
+    display: none;
+    @include mixins.modal-background;
+}
+
+.modal-galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-galeria-cerrar{
+    width: 16px;
+}
+
+.modal-galeria-contenedor{
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/image-product-1.jpg);
+    background-position-y: -35px;
+    background-size: cover;
+    border-radius: 16px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.modal-galeria-previo{
+    @include mixins.imagen-btn(190px, 150px)
+}
+
+.modal-galeria-next{
+    @include mixins.imagen-btn(0px ,0px)
+}
+
+.modal-galeria-miniaturas{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.modal-galeria-miniatura{
+    width: 90px;
+    border-radius: 16px;
+}

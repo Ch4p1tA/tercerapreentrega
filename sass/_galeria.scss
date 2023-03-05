@@ -1,0 +1,50 @@
+@use "variables";
+@use "mixins";
+
+.galeria-contenedor{
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/image-product-1.jpg);
+    background-position-y: -35px;
+    background-size: cover;
+    border-radius: 16px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.galeria-previo{
+    @include mixins.imagen-btn(170px, 15px);
+}
+
+.galeria-next{
+    @include mixins.imagen-btn(170px, 320px);
+}
+
+.galeria-miniaturas{
+    padding: 32px;
+    display: none;
+    .galeria-miniatura{
+        width: 90px;
+        border-radius: 16px;
+    }
+    @media(min-width: 1115px){
+        display: flex;
+        justify-content: space-between;
+        width: 446px;
+    .galeria-contenedor{
+        border-radius: 16px;
+        height: 446px;
+        margin-bottom: 32px;
+    }
+    }
+}
+@media(min-width: 1115px){
+    .galeria-previo{
+        display: none
+    }
+    
+    .galeria-next{
+        display: none
+    }
+}

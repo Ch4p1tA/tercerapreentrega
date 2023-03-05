@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <main class="main-container">
+        <header class="main-header">
+            <div class="header-menu-logo">
+                <img class="header-menu" src="./images/icon-menu.svg" alt="Icono del menu">
+                <img class="header-logo" src="./images/logo.svg" alt="">
+                <nav class="main-nav">
+                    <ul class="nav-items">
+                        <li> <a class="nav__link" href="#">Coleccion</a></li>
+                        <li> <a class="nav__link" href="#">Hombre</a></li>
+                        <li> <a class="nav__link" href="#">Mujer</a></li>
+                        <li> <a class="nav__link" href="#">Nosotros</a></li>
+                        <li> <a class="nav__link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- inicio modal nav -->
+            <div class="modal-nav">
+                <nav class="main-modalnav">
+                    <img class="modal-nav-cerrar" src="./images/icon-close.svg" alt="Icono de cerrar el menu">
+                    <ul class="modalnav-items">
+                        <li><a class="modalnav__link" href="#">Coleccion</a></li>
+                        <li><a class="modalnav__link" href="#">Hombre</a></li>
+                        <li><a class="modalnav__link" href="#">Mujer</a></li>
+                        <li><a class="modalnav__link" href="#">Nosotros</a></li>
+                        <li><a class="modalnav__link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- final modal nav -->
+            <div class="header-carrito">
+                <div class="carrito">
+                    <div class="carrito--notificacion">0</div>
+                    <img src="./images/icon-cart.svg" alt="">
+                </div>
+                <img class="header-avatar" src="./images/image-avatar.png" alt="">
+            </div>
+        </header>
+        <section class="contenido">
+            <article class="galeria">
+                <div class="galeria-contenedor">
+                    <img class="galeria-previo" src="./images/icon-previous.svg" alt="">
+                    <img class="galeria-next" src="./images/icon-next.svg" alt="">
+                </div>
+                <div class="galeria-miniaturas">
+                    <img class="galeria-miniatura" id="1" src="./images/image-product-1-thumbnail.jpg" alt="">
+                    <img class="galeria-miniatura" id="2" src="./images/image-product-2-thumbnail.jpg" alt="">
+                    <img class="galeria-miniatura" id="3" src="./images/image-product-3-thumbnail.jpg" alt="">
+                    <img class="galeria-miniatura" id="4" src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </article>
+            <article class="detalles">
+                <h2 class="detalles-marca">Snaker company</h2>
+                <h2 class="detalles-titulo">Zapatillas feas</h2>
+                <p class="detalles-descripcion">Es el texto que aparecerá a modo de sugerencia/ayuda para el usuario (en gris, ligeramente menos visible que el texto del campo).</p>
+                <div class="detalles-precio">
+                    <p class="precio-nuevo">$125.00 <span class="precio-descuento">50%</span></p>
+                    <p class="precio-anterior">$250.00</p>
+                </div>
+                <div class="detalles-producto-cantidad">
+                    <div class="input">
+                        <img class="input-menos" src="./images/icon-minus.svg" alt="">
+                        <input class="input-numero" type="text" name="" id="" value="0">
+                        <img class="input-mas" src="./images/icon-plus.svg" alt="">
+                    </div>
+                    <button class="detalles-boton"> <img src="./images/icon-cart.svg" alt=""> Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+        <!-- Inicio modal carrito -->
+        <div class="modal-carrito">
+            <p class="modal-carrito-titulo">Carrito</p>
+            <div class="modal-carrito-contenedor-salida">
+                <div class="modal-carrito-contenedor-detalles">
+                    <img class="carrito-imagen" src="./images/image-product-1-thumbnail.jpg" alt="">
+                    <div>
+                        <p class="modal-carrito-contenedor-producto">Nombre del producto</p>
+                        <p class="modal-carrito-contenedor-precio">$125.00 x0 <span>$0.00</span></p>
+                    </div>
+                    <img class="modal-carrito-borrar" src="./images/icon-delete.svg" alt="">
+                </div>
+                <button class="modal-carrito-comprar">Comprar</button>
+            </div>
+        </div>
+        <!-- final modal carrito -->
+        <!-- Inicio modal galeria -->
+        <div class="modal-galeria-fondo">
+            <article class="modal-galeria">
+                <img class="modal-galeria-cerrar" src="./images/icon-close.svg" alt="">
+                <div class="modal-galeria-contenedor">
+                    <img class="modal-galeria-previo" src="./images/icon-previous.svg" alt="">
+                    <img class="modal-galeria-next" src="./images/icon-next.svg" alt="">
+                </div>
+                <div class="modal-galeria-miniaturas">
+                    <img class="modal-galeria-miniatura" id="m1" src="./images/image-product-1-thumbnail.jpg" alt="">
+                    <img class="modal-galeria-miniatura" id="m2" src="./images/image-product-2-thumbnail.jpg" alt="">
+                    <img class="modal-galeria-miniatura" id="m3" src="./images/image-product-3-thumbnail.jpg" alt="">
+                    <img class="modal-galeria-miniatura" id="m4" src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </article>
+        </div>
+        <!-- Final modal galeria -->
+    </main>
+    <footer>Powered by Yago</footer>
+    <script src="./index.js"></script>
+</body>
+</html>
